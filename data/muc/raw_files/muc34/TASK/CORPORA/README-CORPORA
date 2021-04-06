@@ -1,0 +1,13 @@
+The tar files in this directory contain the texts (100 texts per file)
+and corresponding answer-key templates for the training ("DEV") set
+and for each of the four test sets ("TST1", "TST2", "TST3", "TST4").
+The file names for the answer keys all start with "key-".  The file
+names that start with the name of the data set are for the texts.  In
+the case of tst4.tar, there are two files for the texts -- the texts
+in tst4-muc4 are all upper case (these are the ones that were used for
+testing), and the ones in tst4-muc4.mixed-case are in their original,
+mixed upper/lower case.
+
+The other file in this directory (text-headers-info) contains
+information on the format of the texts.
+

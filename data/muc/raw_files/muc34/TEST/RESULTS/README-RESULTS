@@ -1,0 +1,20 @@
+These directories contain the results of the base tests run for MUC-4
+on the TST3 and TST4 data sets.  They also contain sample config and
+slotconfig files (external files used by the scoring program) that you
+can modify if you wish to score response templates for TST3 or TST4
+using the cumulative history file that was produced when NRaD scored
+the MUC-4 participants' response templates.
+
+The "response" and "scores" tar files contain subdirectories for each
+of the MUC-4 participant organizations.  The identity of the
+organizations should be apparent from the directory name, with one
+exception:  the directory named "SYNCH" is for the UMBC/ConQuest team
+(ConQuest, Inc. was formerly named Synchronetics, Inc.).
+
+Test data other than what is found in these directories may be
+obtained by request from Beth Sundheim (sundheim@nosc.mil) at NRaD.
+For example, the results for optional test runs that some participants
+chose to make are available, as are the results of the MUC3-MUC4
+"progress" test.  See the MUC-4 proceedings for information on these
+and other components of the MUC-4 evaluation.
+

@@ -1,0 +1,31 @@
+
+               File: places-international -- Unofficial Documentation
+                                  Version 3
+                        (last updated 14 January 1991)
+
+
+International regions
+---------------------
+
+These are some additional place names for your lexicon.  These will *not*
+be used as fillers for the LOCATION slot.  
+
+NOTE: ITEMS ADDED SINCE THE LAST UPDATE ARE MARKED "<-NEW"
+
+AFRICA
+AMERICAN HEMISPHERE (HEMISPHERE)
+ANDEAN <-NEW
+ATLANTIC OCEAN
+CARIBBEAN (INTERNATIONAL REGION)
+CENTRAL AMERICA (INTERNATIONAL REGION)
+EAST EUROPE <-NEW
+EUROPE (CONTINENT)
+LATIN AMERICA (INTERNATIONAL REGION)
+MEDITERRANEAN (SEA)
+NORTH AMERICA (INTERNATIONAL REGION)
+PACIFIC <-NEW
+SOUTH AMERICA (CONTINENT)
+THE AMERICAS <-NEW
+THE FAR EAST
+THE ISTHMUS
+THE MIDDLE EAST

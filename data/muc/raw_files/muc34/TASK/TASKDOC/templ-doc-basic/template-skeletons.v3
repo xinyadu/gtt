@@ -1,0 +1,133 @@
+File name: template-skeletons
+Version: 3
+Date of last update: 3/2/92
+
+Version 3 update notes:
+
+  - The skeletons for MURDER incident types have been deleted.
+(MURDER is no longer on the set list for incident types.)
+
+______________________________________________________________________
+
+                       TEMPLATE SKELETONS
+
+
+This file shows the MUC-4 template format and the slots that are
+not applicable for some of the incident types.  Those that are not
+applicable should always have an asterisk as filler.                    
+
+
+Template skeleton for ARSON incidents:
+
+0.  MESSAGE: ID                     
+1.  MESSAGE: TEMPLATE               
+2.  INCIDENT: DATE                  
+3.  INCIDENT: LOCATION              
+4.  INCIDENT: TYPE                  
+5.  INCIDENT: STAGE OF EXECUTION    
+6.  INCIDENT: INSTRUMENT ID         *
+7.  INCIDENT: INSTRUMENT TYPE       *
+8.  PERP: INCIDENT CATEGORY         
+9.  PERP: INDIVIDUAL ID             
+10. PERP: ORGANIZATION ID           
+11. PERP: ORGANIZATION CONFIDENCE   
+12. PHYS TGT: ID                    
+13. PHYS TGT: TYPE                  
+14. PHYS TGT: NUMBER                
+15. PHYS TGT: FOREIGN NATION        
+16. PHYS TGT: EFFECT OF INCIDENT    
+17. PHYS TGT: TOTAL NUMBER          
+18. HUM TGT: NAME                   
+19. HUM TGT: DESCRIPTION            
+20. HUM TGT: TYPE                   
+21. HUM TGT: NUMBER                 
+22. HUM TGT: FOREIGN NATION         
+23. HUM TGT: EFFECT OF INCIDENT     
+24. HUM TGT: TOTAL NUMBER           
+
+
+Template skeleton for KIDNAPPING incidents:
+
+0.  MESSAGE: ID                     
+1.  MESSAGE: TEMPLATE               
+2.  INCIDENT: DATE                  
+3.  INCIDENT: LOCATION              
+4.  INCIDENT: TYPE                  
+5.  INCIDENT: STAGE OF EXECUTION    
+6.  INCIDENT: INSTRUMENT ID         *
+7.  INCIDENT: INSTRUMENT TYPE       *
+8.  PERP: INCIDENT CATEGORY         
+9.  PERP: INDIVIDUAL ID             
+10. PERP: ORGANIZATION ID           
+11. PERP: ORGANIZATION CONFIDENCE   
+12. PHYS TGT: ID                    *
+13. PHYS TGT: TYPE                  *
+14. PHYS TGT: NUMBER                *
+15. PHYS TGT: FOREIGN NATION        *
+16. PHYS TGT: EFFECT OF INCIDENT    *
+17. PHYS TGT: TOTAL NUMBER          *
+18. HUM TGT: NAME                   
+19. HUM TGT: DESCRIPTION            
+20. HUM TGT: TYPE                   
+21. HUM TGT: NUMBER                 
+22. HUM TGT: FOREIGN NATION         
+23. HUM TGT: EFFECT OF INCIDENT     
+24. HUM TGT: TOTAL NUMBER           
+
+
+Template skeleton for other incident types:
+
+0.  MESSAGE: ID                     
+1.  MESSAGE: TEMPLATE               
+2.  INCIDENT: DATE                  
+3.  INCIDENT: LOCATION              
+4.  INCIDENT: TYPE                  
+5.  INCIDENT: STAGE OF EXECUTION    
+6.  INCIDENT: INSTRUMENT ID         
+7.  INCIDENT: INSTRUMENT TYPE       
+8.  PERP: INCIDENT CATEGORY         
+9.  PERP: INDIVIDUAL ID             
+10. PERP: ORGANIZATION ID           
+11. PERP: ORGANIZATION CONFIDENCE   
+12. PHYS TGT: ID                    
+13. PHYS TGT: TYPE                  
+14. PHYS TGT: NUMBER                
+15. PHYS TGT: FOREIGN NATION        
+16. PHYS TGT: EFFECT OF INCIDENT    
+17. PHYS TGT: TOTAL NUMBER          
+18. HUM TGT: NAME                   
+19. HUM TGT: DESCRIPTION            
+20. HUM TGT: TYPE                   
+21. HUM TGT: NUMBER                 
+22. HUM TGT: FOREIGN NATION         
+23. HUM TGT: EFFECT OF INCIDENT     
+24. HUM TGT: TOTAL NUMBER           
+
+
+Template skeleton for IRRELEVANT messages:
+
+0.  MESSAGE: ID                     
+1.  MESSAGE: TEMPLATE               *
+2.  INCIDENT: DATE                  *
+3.  INCIDENT: LOCATION              *
+4.  INCIDENT: TYPE                  *
+5.  INCIDENT: STAGE OF EXECUTION    *
+6.  INCIDENT: INSTRUMENT ID         *
+7.  INCIDENT: INSTRUMENT TYPE       *
+8.  PERP: INCIDENT CATEGORY         *
+9.  PERP: INDIVIDUAL ID             *
+10. PERP: ORGANIZATION ID           *
+11. PERP: ORGANIZATION CONFIDENCE   *
+12. PHYS TGT: ID                    *
+13. PHYS TGT: TYPE                  *
+14. PHYS TGT: NUMBER                *
+15. PHYS TGT: FOREIGN NATION        *
+16. PHYS TGT: EFFECT OF INCIDENT    *
+17. PHYS TGT: TOTAL NUMBER          *
+18. HUM TGT: NAME                   *
+19. HUM TGT: DESCRIPTION            *
+20. HUM TGT: TYPE                   *
+21. HUM TGT: NUMBER                 *
+22. HUM TGT: FOREIGN NATION         *
+23. HUM TGT: EFFECT OF INCIDENT     *
+24. HUM TGT: TOTAL NUMBER           *

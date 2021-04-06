@@ -1,0 +1,489 @@
+File name: template-doc-part2
+Version: 7
+Date of last update:  3/4/92
+
+V7 Update Notes:
+
+  1) A note on slot 4 concerning DEATH THREAT was deleted.
+  2) Some typos on slot numbers were fixed.
+
+All updates are marked with a vertical bar at the left margin.
+__________________________________________________________________________
+
+        EXAMPLES OF MAPPINGS BETWEEN FILL SPECIFICATIONS AND THE TEXTS
+
+
+	This document describes some of the kinds of mappings that require
+  special explanation.  Explanations are based on examination of approximately
+  130 messages in the training set and the 100 messages in the first test
+  set.  A little over half of these messages were deemed relevant.  The
+  explanations here are not complete with respect to those relevant texts.
+
+Slot 3 -- INCIDENT: LOCATION
+
+  Examples of how to map from text strings to location slot fillers:
+
+  In the following example, "Atlantic" is ignored because it is an
+  international region:
+
+  "ON THE ATLANTIC, OFF BLUEFIELDS" --> COSTA RICA: BLUEFIELDS (CITY)
+
+Slot 4 -- INCIDENT: TYPE
+
+  Here are a few special notes on some of the incident types:
+
+    BOMBING -- This is not intended to be used for aerial bombing, i.e., 
+      bombs dropped from airplanes; use ATTACK instead, with
+      AERIAL BOMB as the instrument.
+|   FORCED WORK STOPPAGE -- This category was created in response to
+       message #0207 in the training set, which talks about an "armed 
+       strike" called by the Shining Path.
+    KIDNAPPING -- This covers abduction/detention
+      in general, e.g., hostage-taking, and abduction with the intent to 
+      bring someone before a kangaroo court.
+
+Slot 5 -- INCIDENT: STAGE OF EXECUTION
+
+    Here is one note on distinguishing attempting bombings from
+    accomplished bombings.
+
+    ATTEMPTED BOMBING -- If a bomb is planted by the perpetrators but
+      deactivated by someone else or moved and intentionally set off by
+      someone else, the event qualifies as an ATTEMPTED BOMBING, and
+      any damage or injury that results goes in the EFFECT slot.  
+      This event type also applies in situations where the perpetrators
+      are trying to plant a bomb somewhere but get stopped in the process.
+
+Slot 7 -- INCIDENT: INSTRUMENT TYPE
+
+  Here are some notes on the kinds of instruments that are intended
+  to be instances of the defined categories:
+
+    MACHINE GUN			"machinegun"
+ 				"submachine gun"
+    HANDGUN			"pistol"
+				"revolver"
+    VEHICLE BOMB		"car bomb"
+				"bus bomb"
+    CUTTING DEVICE              "ax"
+				"knife"
+				"machete"
+
+Slot 9 -- PERP: INDIVIDUAL ID
+
+  Here are some examples of cases when the slot should be filled in.  
+  
+  Use general descriptions only if proper names aren't given.  
+  General descriptions may consist of complete noun phrases, 
+  including determiners, modifying PPs, restrictive relative clauses 
+  (full or reduced).  The answer key may exclude certain 
+  unhelpful modifiers such as "another" (in "another guerilla column)" 
+  and "involved in the killing" (in "the soldiers involved in the killing");
+  however, systems may be granted full credit for a response that
+  includes such modifiers.
+
+    People names:			"ALFREDO CRISTIANI"
+					"JUAN BAUTISTA"
+					"JUAN BAUTISTA NUNEZ AMADOR"
+					"PONCE"
+
+    Name of subpart of organization:	"JACOBO CARCOMO COMMAND"
+                                        "PRESUMED MEMBERS OF THE SHINING PATH GROUP"
+                                        "EPL [POPULAR LIBERATION ARMY] UNIT"
+ 					"MEMBERS OF THE 8TH FRONT"
+
+      Note: A string such as "JACOBO CARCOMO COMMAND" may appear sometimes 
+|     as a filler for slot 9 and other times for slot 10.  It is to be used 
+|     in slot 9 only if the parent organization (i.e., "FPM") is also 
+      identified in the text.  If that parent organization is not 
+      identified in the text, then the string "JACOBO
+|     CARCOMO COMMAND" should be put in slot 10 rather than in slot 9.
+
+    General descriptions:		"GUERILLA COLUMN"
+					"SOLDIERS"
+					"TERRORISTS"
+					"GUERRILLAS"
+					"GROUP OF ARMED MEN" / "ARMED MEN"
+					"YOUNG INDIVIDUALS"
+					"GUERRILLA URBAN COMMANDOS"
+					"SUBVERSIVES" /"GROUP OF SUBVERSIVES"
+					"HEAVILY ARMED MEN WEARING CIVILIAN
+					  CLOTHES" / "HEAVILY ARMED MEN"
+					"LIEUTENANTS"
+					"SECOND LIEUTENANT"
+					"SALVADORAN PARAMILITARY GROUPS"
+					"FOREIGN COMMANDO" / "TERRORIST
+					  COMMANDO"
+					"OFFICERS"
+					"UNIDENTIFIED INDIVIDUALS"
+
+Slot 10 -- PERP: ORGANIZATION ID
+
+  Here are some examples of cases where the slot should be filled in.
+  The answer key will isolate
+  the full name from the acronym in the case where they are juxtaposed in
+  the text, and the answer key will not put the juxtaposed one in 
+  brackets; however, a system may be awarded full credit if it gives both
+  together.
+
+  Proper names of political parties, rebel/guerrilla groups, etc.:
+
+		"FARABUNDO MARTI LIBERATION FRONT" / "FMLN"
+		"ARMY OF NATIONAL LIBERATION"
+		"TUPAC AMARU REVOLUTIONARY MOVEMENT"
+		"ZARATE WILLKA LIBERATION ARMED FORCES"
+		"NATIONALIST REPUBLICAN ALLIANCE"
+		"DEMOCRATIC PATRIOTIC COMMITTEES"
+                "ANTICOMMUNIST ACTION ALLIANCE" 
+		"POPULAR LIBERATION ARMY"
+		"SHINING PATH"
+		"CINCHONERO PEOPLE'S LIBERATION FRONT"
+		"MORAZANIST PATRIOTIC FRONT" / "FPM"
+		"CINCHONERO POPULAR LIBERATION MOVEMENT"
+		"TUPAC AMARU REVOLUTIONARY MOVEMENT" / "MRTA"
+		"NATIONALIST REPUBLICAN ALLIANCE" / "ARENA"
+                "EPL" / "POPULAR LIBERATION ARMY"
+                "JACOBO CARCOMO COMMAND" (Note:  Also see slot 5 examples)
+
+  Other fixed ways of referring to organizations (if they do not have
+  a unique proper name).  This will primarily include identification of 
+  government/military organizations (that is, cases where
+  the incident is categorized as STATE-SPONSORED VIOLENCE).
+
+		"ARMED FORCES"
+		"ARMY"
+		"NICARAGUAN EMBASSY"
+                "TREASURY POLICE"
+                "POLICE DEPARTMENT"
+                "CHILEAN GOVERNMENT"
+                "ECUADORAN POLICE"
+                "MEDELLIN CARTEL" (Note: CATEGORY is TERRORIST ACT)
+
+Slot 11 -- PERP: ORGANIZATION CONFIDENCE
+
+   Words that suggest that SUSPECTED OR ACCUSED (BY AUTHORITIES) is
+   appropriate include modifiers such as "presumably," "apparently," 
+   "alleged, and "suspected."
+
+   An authority figure may "admit" or "acknowledge" responsibility on
+   behalf of the perpetrator organization, but the filler should be 
+   CLAIMED OR ADMITTED only if the perpetrator himself admits that
+   his organization committed the crime; otherwise, 
+   the filler should be SUSPECTED OR ACCUSED BY AUTHORITIES.
+
+   Here is a decision tree to assist you in filling this slot:
+ 
+                           Perp. reported
+                           to be acquitted?
+                             /        \
+                        Yes /          \ No
+                           /            \
+                     ACQUITTED       Perp. explicitly
+                                        connected
+                                       to incident?
+                                         /   \
+                                    Yes /     \ No
+                                       /       \
+                               Did the Perp   POSSIBLE
+                                report it?
+                                  /    \
+                             Yes /      \ No
+                                /        \
+                            CLAIMED    Was any
+                               OR      uncertainty
+                           ADMITTED    expressed?
+                                        /   \
+                                   Yes /     \ No
+                                      /       \
+                                 Was the     REPORTED AS FACT
+                              accuser an
+                              authority?
+                                /   \
+                           Yes /     \ No
+                              /       \
+                      SUSPECTED OR   SUSPECTED OR
+                       ACCUSED BY      ACCUSED
+                      AUTHORITIES
+
+Slot 12 -- PHYS TGT: ID
+
+  Here are some examples of cases where the slot should be filled in.  
+  The ID need not be a proper noun nor even include one as a modifier.
+  
+  	"STORES"
+	"ELECTRIC TOWERS"
+	"VEHICLE"
+	"CAR DEALERSHIP"
+	"ELECTRIC FACILITIES"
+	"GROCERY STORE"
+	"BUILDING" / "BUILDING WHERE U.S. DIPLOMATS RESIDE"
+	"EMBASSY FACILITIES"
+	"SERVICE STATION"
+	"RESIDENCE"
+	"POWER TRANSMISSION TOWERS"
+	"BROTHELS"
+	"PUBLIC BUS"
+	"RESTAURANT"
+	"BRIDGE"
+	"PLANNING AND ECONOMIC COORDINATION MINISTRY"
+	"GOVERNMENT HOUSE"
+	"SALVADORAN PRESIDENTIAL HOUSE"
+	"PILMAIQUEN TELEPHONE COMPANY BUILDING" / "TELEPHONE COMPANY BUILDING"
+	"TELECOMMUNICATIONS ENTERPRISE"
+	"AGRARIAN BANK"
+	"NATIONAL BANK"
+	"HEALTH MINISTRY"
+	"TELEPHONE OFFICE" /"HONDUTEL OFFICE" / "HONDURAN TELECOMMUNICATIONS 
+	  ENTERPRISE OFFICE"
+	"TELEPHONE COMPANY OFFICES" / "ADMINISTRATION OFFICES OF THE 
+	  HONDURAN TELECOMMUNICATIONS ENTERPRISE"  
+	"AGRICULTURE AND LIVESTOCK MINISTRY"
+	"VICAS STORE"
+	"CENTRAL RESERVE BANK"
+	"LEMPA RIVER HYDROELECTRIC EXECUTIVE SUBSTATION" / "CEL SUBSTATION"
+	"UNION HEADQUARTERS"
+
+Slot 13 -- PHYS TGT: TYPE
+
+  Here some items from the set list and corresponding fills (from slot 12):
+
+    CIVILIAN RESIDENCE	"HOUSES" (of peasants)
+
+    COMMERCIAL		"STORES"
+			"CAR DEALERSHIP"
+			"GROCERY STORE"
+			"SERVICE STATION"
+			"BROTHELS"
+			"RESTAURANT"
+			"VICAS STORE"
+
+    COMMUNICATIONS	"PILMAIQUEN TELEPHONE COMPANY BUILDING" / "TELEPHONE
+			  COMPANY BUILDING"
+			"TELECOMMUNICATIONS ENTERPRISE"
+			"TELEPHONE OFFICE" /"HONDUTEL OFFICE" / 
+			  "HONDURAN TELECOMMUNICATIONS ENTERPRISE OFFICE"
+			"TELEPHONE COMPANY OFFICES" / "ADMINISTRATION OFFICES 
+			  OF THE HONDURAN TELECOMMUNICATIONS ENTERPRISE"
+                        "TELEPHONE BOOTH"
+
+    DIPLOMAT OFFICE OR	"BUILDING WHERE U.S. DIPLOMATS RESIDE"
+      RESIDENCE		"U.S. EMBASSY FACILITIES"
+			"RESIDENCE" (of the Nicaraguan ambassador)
+
+    ENERGY		"ELECTRIC TOWERS"
+			"ELECTRIC FACILITIES"
+			"POWER TRANSMISSION TOWERS"
+			"LEMPA RIVER HYDROELECTRIC EXECUTIVE SUBSTATION" / 
+			  "CEL SUBSTATION"
+
+    FINANCIAL		"AGRARIAN BANK"
+			"NATIONAL BANK"
+			"CENTRAL RESERVE BANK"
+
+    GOVERNMENT OFFICE	"PLANNING AND ECONOMIC COORDINATION MINISTRY"
+      OR RESIDENCE	"GOVERNMENT HOUSE"
+			"SALVADORAN PRESIDENTIAL HOUSE"
+			"HEALTH MINISTRY"
+			"AGRICULTURE AND LIVESTOCK MINISTRY"
+
+    ORGANIZATION OFFICE	"UNION HEADQUARTERS"
+      			"UCR DISTRICT HEADQUARTERS" / "UCR HEADQUARTERS"
+
+    TRANSPORT VEHICLE	"VEHICLE"
+			"PUBLIC BUS"
+
+    TRANSPORTATION ROUTE "BRIDGE"
+
+    WATER		"WATER PIPES"
+
+    OTHER		"MORMON TEMPLE" / "TEMPLE"
+ 			"CATHOLIC SCHOOL" / "SCHOOL"
+
+Slot 16 -- PHYS TGT: EFFECT OF INCIDENT
+
+  Notable cases of mappings into this slot include the following:
+
+  1.  The derailment of a train due to a bombing implies SOME DAMAGE to
+  the train (DEV #0100).
+
+  2.  The "destruction" of some of the contents of a physical target
+  does not imply the destruction of the target (DEV #0076).
+
+
+Slot 18 -- HUM TGT: NAME
+Slot 19 -- HUM TGT: DESCRIPTION
+
+| For incidents that have a physical target, the human target will
+| tend to be some person or group that was at or near that target (either
+| intentionally or unintentionally) at the time of the incident.  Anyone
+| who suffers injury or death as a result of the incident should definitely
+| be mentioned in these slots.
+
+  Here are some examples of cases where the NAME and DESCRIPTION slots
+  should be filled in.  The text may refer to more than one human target,
+  or the text may refer to a set of targets and then name or
+  describe some or all of them.  
+
+  If the proper name of an individual human target is given, put it in the
+  NAME slot, and give the fullest version available
+  in the text of the person's name, omitting titles and honorifics.
+
+	"RICARDO ALFONSO CASTELLAR"
+	"WILLIAM"
+	"HECTOR OQUELI COLINDRES"
+	"HECTOR OQUELI"
+	"MASON"
+
+        "VICTOR LOPEZ" (let's assume he's only identified as a "peasant")
+
+  For named targets, the DESCRIPTION slot should contain the person's title,
+  profession, or role, if available; otherwise, it should be null for
+  named targets.  Thus, we find no entry for "VICTOR LOPEZ" in the
+  example below.
+
+	"MAYOR OF ACHI": "RICARDO ALFONSO CASTELLAR"
+	"TORRADO'S SON": "WILLIAM"
+	"POLITICAL LEADER": "HECTOR OQUELI COLINDRES" 
+	"POLITICAL LEADER": "HECTOR OQUELI" 
+        "PRESIDENT OF THE MORTGAGE BANK" / "MR": "MASON"
+
+  General descriptions may consist of complete noun phrases, 
+  including determiners, modifying PPs, restrictive relative clauses 
+  (full or reduced).  The answer key may exclude quantifiers and certain 
+  unhelpful modifiers such as "another" (in "another villager)"
+  and nationalities such as "Salvadoran" (in "Salvadoran peasants");
+  however, systems may be granted full credit for a response that
+  includes such modifiers.    
+
+	"CABINET MEMBERS" / "CABINET MINISTERS"
+	"PEASANTS"
+	"WOMEN"
+	"EMPLOYEES"
+	"VILLAGERS"
+	"DIPLOMATS"
+	"EMBASSY OFFICIALS"
+	"MEMBERS OF A LEGAL COMMISSION"
+	"JUDICIAL OFFICIALS"
+	"OFFICIALS"
+	"JUDGE"
+	"INVESTIGATORS"
+	"PEOPLE"
+	"COMMUNITY" / "PEOPLE"
+	"PASSERBY"
+	"LOCAL GOVERNMENT OFFICIALS" / "LOCAL AUTHORITIES"
+	"UNION LEADERS"
+	"POLICE PATROL"
+	"GUARDS"
+	"POLICEMAN"
+	"PATROLMEN"
+
+  Descriptions may also include proper nouns, identifying groups.
+
+	"JESUIT PRIESTS"
+	"FENASTRAS" / "FENASTRAS LEADERS"
+
+  In certain cases, the filler may be a reference to the effect on the
+  target rather than to the target per se, e.g., the filler may be
+  the string "DEAD" from the phrase "left 67 dead".  Note that this is
+  done only if someone is killed or injured and is not identified in any
+  other way.  (If the incident caused no death or injury, the ID slot
+  should be null, i.e., don't provide a fill such as "CASUALTIES" in the
+  case of a phrase such as "no casualties were reported" or a fill such
+  as "ONE" from a phrase such as "no one was injured.")
+
+ 	"DEAD"
+ 	"WOUNDED"
+
+Slot 20 -- HUM TGT: TYPE
+
+  Here are some items from the set list and corresponding fills (from
+  slot 18 or 19):
+
+
+    CIVILIAN			"ROMERO"
+ 				"ELLACURIA"
+ 				"MASON"
+	 			
+                                "PEASANTS"
+                                "JESUIT PRIESTS"
+				"EMPLOYEES" (of the priests)
+				"VILLAGERS"
+				"REPORTER"
+				"INDUSTRIALIST"
+				"BUSINESSMAN"
+				"FENASTRAS"
+				"UNION LEADERS"
+    				"SON"
+				"HIS COMPANION"
+				"WOMEN"
+				"PEOPLE"
+				"WOMAN"
+				"COMMUNITY" / "PEOPLE"
+				"PASSERBY"
+
+    DIPLOMAT			"DIPLOMATS"
+				"EMBASSY OFFICIALS"
+
+    GOVERNMENT OFFICIAL		"MAYOR"
+				"DEPARTMENTAL GOVERNMENT SECRETARY"
+				"CABINET MEMBERS" / "CABINET MINISTERS"
+				"LOCAL GOVERNMENT OFFICIALS" / "LOCAL 
+				  AUTHORITIES"
+
+    FORMER GOVERNMENT OFFICIAL	"DEFENSE MINISTER"
+				"DEFENSE MINISTER DIVISION GENERAL"
+
+    FORMER ACTIVE MILITARY	"RETIRED GENERAL"
+				"FORMER ARMED FORCES COMMANDER"
+				"FORMER HONDURAN ARMED FORCES CHIEF GENERAL..."
+
+    LEGAL OR JUDICIAL		"ATTORNEY"
+				"MEMBERS OF A LEGAL COMMISSION"
+				"JUDICIAL OFFICIALS"
+				"OFFICIALS WHO HAD STARTED TO INVESTIGATE..."
+				"JUDGE"
+				"INVESTIGATORS"
+				"LAWYER"
+
+    POLITICAL FIGURE		"MNR ASSISTANT SECRETARY GENERAL"
+				"MEMBER OF THE SOCIAL DEMOCRATIC PARTY OF 
+				  GUATEMALA"
+				"POLITICAL LEADER"
+				"LEADER OF THE NATIONAL REVOLUTIONARY MOVEMENT 
+				  AND THE DEMOCRATIC CONVERGENCE AND SECRETARY 
+				  FOR LATIN AMERICA OF THE SOCIALIST 
+				  INTERNATIONAL"
+				"MNR LEADER"
+				"LEFTIST SALVADORAN LEADER"
+				"POLITICAL LEADER"
+				"LEADER OF THE SALVADORAN LEFTIST PARTY 
+				  NATIONAL REVOLUTIONARY MOVEMENT"
+				"SOCIAL DEMOCRATIC LEADER"
+				"MEMBER OF THE ... SOCIAL DEMOCRATIC PARTY"
+				"LEADER OF THE SOCIALIST INTERNATIONAL"
+				"LEADERS OF THE LEFTIST PATRIOTIC UNION"
+				"PATRIOTIC UNION PRESIDENT"
+				"NICARAGUAN CONTRA COMMANDER"
+				"CONTRA COMMANDER"
+				"SECOND IN COMMAND OF THE 
+				  COUNTERREVOLUTIONARIES"
+
+    LAW ENFORCEMENT		"POLICEMEN"
+				"POLICE PATROL"
+ 				"LIEUTENANT" (in the "national police")
+
+    SECURITY GUARD		"BODYGUARD"
+ 				"GUARDS" (security guards)
+ 				"SECURITY OFFICERS"
+
+Slot 23 -- HUM TGT: EFFECT OF INCIDENT
+
+  Here are a couple notes on mappings into this slot:
+
+  1.  The phrase, "NO CASUALTIES," can mean either that there was NO DEATH
+  or that there was NO INJURY OR DEATH.
+
+  2.  The filler REGAINED FREEDOM, which applies only to KIDNAPPING
+  incidents, is to be used when the target escapes, is rescued, or is
+  released.
+

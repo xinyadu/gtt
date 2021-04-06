@@ -1,0 +1,790 @@
+File name: template-doc-part1
+Version: 7
+Date of last update:  3/4/92
+
+V7 Update Notes:
+
+  1) The MURDER incident type has been deleted (incorporated into
+ATTACK).
+  2) A few new instrument types have been added to the hierarchy.
+  3) Some information formerly in section 7.20 and 7.21 has been
+moved to template-doc-part2.
+
+All updates are marked with a vertical bar at the left margin.
+
+__________________________________________________________________________
+
+   TASK DESCRIPTION, TEMPLATE DESIGN, AND SPECIFICATIONS FOR SLOT FILLERS
+
+
+1.0  WHAT CONSTITUTES A "RELEVANT" INCIDENT?
+
+	Relevant incidents are, in general, violent acts perpetrated with
+  political aims and a motive of intimidation.  These are acts of terrorism.
+  Here is an official, "schoolbook" definition of terrorism:
+
+	"a sudden, unexpected act of shocking, calculated, and unlawful
+	violence, or the plausible threat of such violence, by an illegal,
+	subnational, clandestine group -- usually carried out in a 
+	peaceful, civilian environment, be it urban, rural, in the air or
+	on a body of water -- against certain noncombatants or targets
+	that represent or symbolize a certain country, but sometimes
+	indiscrimately against bystanders or passersby at a particular
+	location, with the intention of garnering publicity, propagandizing
+	a cause, and intimating as many people as possible in order to
+	attain social, political, or strategic objectives."
+
+				-Rex A. Hudson, "Dealing with International
+				Hostage-Taking: Alternatives to Reactive
+				Counterterrorist Assaults," International
+				Terrorism, Vol. 12, 1990.
+
+	This has been turned into more of an operational definition by
+  widening the schoolbook definition somewhat and making some rather arbitrary
+  distinctions.  Your advice on how to improve on this operational definition
+  is welcome.  
+
+	1) Terrorist acts may be perpetrated by an "illegal,
+  subnational, clandestine group," which includes known guerrilla and
+  drug-trafficking organizations.  Their targets may be just about
+  anything/anybody except (a) another such group or member of such a
+  group or (b) a military/police installation or force (with the same
+  nationality as the perpetrator), or a member of such a force, in which
+  case the incident is presumed to be a purely guerrilla act and is not
+  relevant to the MUC-3 terrorist incident database.  Thus, killings of
+  drug traffickers will not be included in the database (by exception a,
+  above), nor will "clashes" between guerrilla groups and the military
+  (by exception b, above).  
+
+ 	However, if a guerrilla warfare incident happens to affect
+  civilian personnel or property, whether intentionally or accidentally,
+  the incident becomes relevant and should be included in the database.
+  In these cases, the database should contain information on both the
+  military and the nonmilitary targets.
+
+	Similarly, the database will include incidents of sabotage on
+  a nation's infrastructure.  It will also include incidents
+  perpetrated against individuals who are former members of the
+  military, e.g., a murder perpetrated against a retired general.
+
+	Sometimes an article gives mixed reports, e.g., a "terrorist
+  attack" on a bridge guarded by the national (military) police.  In a
+  case such as this, which could be interpreted as a case of terrorism
+  (sabotage of the nation's infrastructure) or of guerrilla warfare
+  (attack on a physical target of military importance), we will
+  consider the physical target to be nonmilitary and will include the
+  incident in the database.
+
+	2) Under certain circumstances, the perpetrator may be a member of
+  the government, including the military.  This is the case when the target is
+  civilian.
+
+	3) Sometimes the perpetrator is not identified and no language
+  is used to indicate that the act is *not* being attributed to
+  "terrorists," "extremists," "subversives," "guerrillas," etc.  In
+  these cases, as long as the act itself is of one of the expected
+  types and the target(s) is/are not exclusively military, the incident
+  will be presumed to be a possible terrorist act and is to be included
+  in the database.
+
+	4) The articles in the MUC-3 corpus originate in many different
+  parts of the world, but they all emphasize something about one of the nine
+  Latin American countries of interest (El Salvador, Guatemala, Honduras,
+  Argentina, Bolivia, Chile, Colombia, Ecuador, Peru).  However, only 
+  incidents whose perpetrator(s), target(s), or location "belong to" one of 
+  the nine countries of interest belong in the MUC-3 database.  Thus, an 
+  incident perpetrated against a human target who is a citizen of one of those
+  countries may belong in the database even if that person is attacked while 
+  he's in a different country.  Or an incident perpetrated against the embassy
+  of one of those nine countries may belong in the database, no matter where 
+  that embassy is located.
+
+	5) Only terrorist acts (and attempted acts) that are reported as
+  factual are to be included in the database.  An incident is *not* to be
+  recorded in the database if the article discredits the story or cites a
+  source that discredits the story.  (However, if the article also cites a
+  source that *supports* the story, that version of the story should go in the
+  database.)  Rumors are to be excluded.
+
+	6) An incident is to be recorded in the database only if it is
+  "recent." The intent is to include only information that is new or updated.
+  We define "recent" to mean that either (a) it occurred within two months of
+  the date of the article or (b) new information is being provided in the
+  article on an incident that occured more than two months prior, such as new
+  suspects being brought forth as the perpetrators of an old crime.  However,
+  there are a number of articles that fail to mention the date of the
+  incidents, some of which are, in fact, recent.  Therefore, if there is no
+  indication that the information is not recent or if there is no indication
+  that the information is being given only to provide historical context (as
+  indicated by phrases such as "Let us recall that..."), the incident should
+  go in the database.
+
+	7) An incident is to be recorded in the database only if the
+  article's description of it is "specific."  Generic descriptions of
+  incidents like "terrorist attacks on the Cano Limon-Covenas oil pipeline"
+  and summary descriptions like "the total persons kidnapped in Colombia over
+  the last 6 weeks was 85" are to be excluded.
+
+	The articles sometimes give useful information about a specific
+  incident but provide very few details.  Therefore, as long as all the other
+  criteria are met, we will include any incident that at least indicates the
+  nature of the target or the nature of the attack.  Thus, an article
+  whose only reference to an incident is "an attack perpetrated by a
+  subversive group" or "the tragic incident at Uchiza" would be excluded, but
+  an article that says "Last night there were fewer attacks on stores and
+  electric towers in the capital" or "a UCR district headquarters in Buenos
+  Aires province was completely destroyed by a bomb explosion" would be
+  included.  
+
+	Here are two further examples of texts that do *not* warrant
+  generation of templates: "As of 0500 GMT today, the police had
+  received reports of two other explosions in two La Paz neighborhoods"
+  (the nature of the explosion isn't mentioned, and the target isn't
+  mentioned either); "the bombing on San Salvador's neighborhoods" (the
+  prepositional phrase may be interpreted as conveying the target as
+  well as the location, but as a target, it's too general -- any location
+  name that is on the set list cannot serve as a target ID, with the 
+  exception of farm names).
+
+2.0  DEFINITIONS OF SLOT TYPES
+
+  0.  MESSAGE: ID -- The first line of the message, e.g., DEV-MUC3-0001 (NOSC).
+  This slot serves as an index and is not scored in its own right.
+  1.  MESSAGE: TEMPLATE -- A number that distinguishes the templates for a given
+  message.  In the answer key, the word OPTIONAL in parentheses after 
+  the template number indicates that there is significant doubt whether
+  the incident belongs in the database.
+  2.  INCIDENT: DATE -- The date of incident (according to local time, not
+  Greenwich Mean Time).
+  3.  INCIDENT: LOCATION -- The place where the incident occurred.
+  4.  INCIDENT: TYPE -- A terrorist act reported on in the message.                  
+  5.  INCIDENT: STAGE OF EXECUTION -- An indicator of whether the terrorist
+  act was accomplished, attempted, or merely threatened.
+  6.  INCIDENT: INSTRUMENT ID -- A device used by the perpetrator(s) in carrying
+  out the terrorist act.
+  7.  INCIDENT: INSTRUMENT TYPE -- The category that the instrument fits into.
+  8.  PERP: INCIDENT CATEGORY -- The subcategory of terrorism that the incident 
+  fits into, as determined by the nature of the perpetrators.
+  9.  PERP: INDIVIDUAL ID -- A person responsible for the incident.
+  10. PERP: ORGANIZATION ID -- An organization responsible for the incident.
+  11. PERP: ORGANIZATION CONFIDENCE -- The way a perpetrator organization is viewed
+  in the message.
+  12. PHYS TGT: ID -- A thing (inanimate object) that was attacked.
+  13. PHYS TGT: TYPE -- The category that the physical target fits into.
+  14. PHYS TGT: NUMBER -- The number of physical targets with a particular ID and TYPE.
+  15. PHYS TGT: FOREIGN NATION -- The nationality of a physical target, if
+  the nationality is identified in the article and if it's different from country
+  where incident occurred.  
+  16. PHYS TGT: EFFECT OF INCIDENT -- The impact of the incident on a physical
+  target.
+  17. PHYS TGT: TOTAL NUMBER -- The total number of physical targets.
+  18. HUM TGT: NAME -- The name of a person who was the obvious or apparent
+  target of the attack or who became a victim of the attack.
+  19. HUM TGT: DESCRIPTION -- The title or role of a named human target or a general
+  description of an unnamed human target.
+  20. HUM TGT: TYPE -- The category that the human target fits into.
+  21. HUM TGT: NUMBER -- The number of human targets with a particular NAME,
+  DESCRIPTION, and TYPE.
+  22. HUM TGT: FOREIGN NATION -- The nationality of a human target, if
+  the nationality is identified in the article and if it's different from country 
+  where incident occurred.  
+  23. HUM TGT: EFFECT OF INCIDENT -- The impact of the incident on a human
+  target(s).
+  24. HUM TGT: TOTAL NUMBER -- The total number of human targets.
+
+
+3.0 DEFINITIONS OF FILL TYPES
+
+  Set fill: An item from a finite list of possibilities enumerated in
+    the documentation provided to participants.
+  Numeric:  A number, a range of numbers, or a number with a prefix
+    meaning "approximately".
+  Text conversion:  A canonical form extracted or derived from the
+    text.  The documentation provided to participants specifies the
+    expected format.
+  Text string:  A string extracted from the text and placed inside
+    double quotes in the slot.  Note that this string may contain
+    misspellings, if found in the original text.
+  Null:  A hyphen (-) indicating that the system has no response.
+  Inapplicable:  An asterisk (*) indicating that a particular slot
+    is never to be filled in the case of certain incident types.
+
+4.0  GENERAL REQUIREMENTS FOR FILLS
+
+4.1  FORMAT FOR SYSTEM RESPONSES
+
+  System responses should look like plain text, e.g., they cannot be 
+    enclosed in parentheses, multi-word fillers cannot be connected by 
+    underscore characters, etc.
+  Systems are not permitted to use the slash notation that is used in
+    the key to separate alternative forms of a single filler.
+  When multiple fillers for a single slot are generated, each should
+    appear on a separate line, arranged in a column, with space padding in 
+    front (no tabs).
+  Some slots require that their fillers be cross-referenced
+    to the referent (i.e., the filler of some other slot).
+    To match the answer sheet, this should be done by appending the
+    referent, separating the two data items with a colon.
+    Example fill for the PHYS TARGET: EFFECT OF INCIDENT slot, whose 
+      fillers must be cross-referenced to the corresponding fillers in
+      the PHYS TGT: ID slot.
+      PHYS TGT: ID                  "OFFICES OF CITICORP BANK"
+                                    "RESIDENCE OF US AMBASSADOR"
+      PHYS TGT: EFFECT OF INCIDENT  SOME DAMAGE: "OFFICES OF CITICORP BANK"
+                                    DESTROYED: "RESIDENCE OF US AMBASSADOR"
+  One template form serves for all incident types.  However, depending on
+    the incident type, one or more slots do not apply.  These slots should
+    appear with an asterisk as the fill, and they will not figure in the 
+    scoring.  For irrelevant articles, all slots except the MESSAGE: ID slot
+    should have an asterisk.
+
+4.2  SPECIAL FORMATS FOR ANSWER KEYS
+
+  All fills in the answer key will be in upper case.
+  If there is more than one "correct" answer for any given slot filler,
+    the options will all appear on one line in the answer key, separated 
+    by a slash.
+  The word OPTIONAL may appear in parentheses after the filler for the
+    MESSAGE: TEMPLATE slot, indicating that generation of this template is 
+    optional.
+  A question mark preceding a filler indicates that generation of this
+    filler is optional, i.e., that null (hyphen) is also a correct
+    system response.
+
+5.0  GENERAL GUIDELINES FOR GENERATING MORE THAN ONE TEMPLATE PER ARTICLE
+
+  If an article discusses more than one relevant type of terrorist incident, 
+    each such incident should be captured in a separate template.  
+  If an article discusses more than one instance of the same relevant type
+    of terrorist incident, each such incident should be captured in a
+    separate template.  A "separate instance" is one which has a different
+    filler for the location, date, category, or perpetrator slot.  If no 
+    distinctions of these kinds are made in the text, the instances should
+    be incorporated into a single template, e.g., if the article describes
+    "attacks" by "rebels" on "ten power stations" and does not give varying
+    information on the location of those targets, etc.  Note that the level
+    of granularity is defined by what can go in a slot; thus, an article
+    that describes two bombings on targets on different streets in the
+    same neighborhood should be captured in one template rather than two,
+    since the location slot cannot have a filler that is at the level of 
+    granularity of a street.
+
+
+6.0  DATA TYPES FOR FILLERS
+
+  The type of data that is to be generated for each of the slots is shown
+    here.  Section 7 contains information on which slots can be null, which 
+    slots are inapplicable for particular incident types, and which slots can 
+    contain multiple values.
+
+  0.  MESSAGE: ID                     Set fill (alphanumeric)
+  1.  MESSAGE: TEMPLATE               Numeric (integer)
+  2.  INCIDENT: DATE                  Text conversion (alphanumeric)
+  3.  INCIDENT: LOCATION              Concatenation of set fills (alpha)
+  4.  INCIDENT: TYPE                  Set fill (alpha)
+  5.  INCIDENT: STAGE OF EXECUTION    Set fill (alpha)
+  6.  INCIDENT: INSTRUMENT ID         Text string (alphanumeric)
+  7.  INCIDENT: INSTRUMENT TYPE       Set fill (alpha)
+  8.  PERP: INCIDENT CATEGORY         Set fill (alpha)
+  9.  PERP: INDIVIDUAL ID             Text string (alphanumeric)
+  10. PERP: ORGANIZATION ID           Text string (alphanumeric)
+  11. PERP: ORGANIZATION CONFIDENCE   Set fill (alpha)
+  12. PHYS TGT: ID                    Text string (alphanumeric)
+  13. PHYS TGT: TYPE                  Set fill (alpha)
+  14. PHYS TGT: NUMBER                Text conversion (alphanumeric) or set fill
+  15. PHYS TGT: FOREIGN NATION        Set fill (alpha)
+  16. PHYS TGT: EFFECT OF INCIDENT    Set fill (alpha)
+  17. PHYS TGT: TOTAL NUMBER          Text conversion (alphanumeric)
+  18. HUM TGT: NAME                   Text string (alphanumeric)
+  19. HUM TGT: DESCRIPTION            Text string (alphanumeric)
+  20. HUM TGT: TYPE                   Set fill (alpha)
+  21. HUM TGT: NUMBER                 Text conversion (alphanumeric) or set fill
+  22. HUM TGT: FOREIGN NATION         Set fill (alpha)
+  23. HUM TGT: EFFECT OF INCIDENT     Set fill (alpha)
+  24. HUM TGT: TOTAL NUMBER           Text conversion (alphanumeric)
+
+
+7.0  SPECIFICATION OF SLOT FILLERS
+
+7.1 SLOT 0--MESSAGE: ID 
+
+  Number of fillers: Always one filler per template
+  General method for filling:  To be copied by the system from first line
+    of the article.
+  Set list: This list is the set of all message IDs in the corpus.
+  Note:  If an article is irrelevant, this is the only slot that should
+    be filled in.
+
+7.2 SLOT 1--MESSAGE: TEMPLATE
+
+  Number of fillers:  Always one filler per template
+  General method for filling:   A number (in digits) generated by the 
+    system, starting with 1 and incremented for each new template.
+  Notes:  
+    1) Ordering need not match answer sheet -- the scoring program will 
+    attempt to make best match.
+    2) On the answer sheet, the word OPTIONAL in parentheses after the
+    template number indicates that there is significant doubt whether
+    the incident belongs in the database.
+
+7.3 SLOT 2--INCIDENT: DATE
+
+  Applicability: Applicable to all types of incidents
+  Number of fillers:  Always one filler per template, unless NO DATE
+    appears in the message header and a date cannot be determined from
+    the body of the article, in which case NULL (hyphen) is appropriate.
+  General method for filling:  A form generated by the system from the 
+    text, expressed in one of the 
+    following forms (whichever is appropriate for the article):
+    1.  DD MMM YY (e.g. 21 JAN 89, meaning "on 21 JAN 89")
+    2.  DD MMM YY - DD MMM YY (e.g. 15 JAN 89 - 21 JAN 89, meaning
+        "on or between 15 JAN 89 and 21 JAN 89")
+    3.  - DD MMM YY (e.g. - 21 JAN 89, meaning "on or before 21 JAN 89")
+  Notes: 
+    1) If the article contains the name of a day of the week, e.g. "last
+    Wednesday",  rather than a reference to the date, use form 3, above, with
+    the best known absolute date as the anchor, e.g., the date of the article.
+    2) If the article uses an easily calculable expression such as
+    "yesterday," use form 1, above, with the date calculated from the
+    best known absolute date as the anchor, e.g., the date of the article.
+    An "easily calculable" expression is one that indicates how many days
+    to add or subtract from the anchor.
+    3) Whenever the date for an event is derived by default from the date in
+    in the message header, the answer key will use form 3, above, with the
+    header date as the anchor.
+
+7.4 SLOT 3--INCIDENT: LOCATION
+
+  Applicability: Applicable to all types of incidents
+  Number of fillers:  Always one (possibly complex) filler per template
+  General method for filling:  The country where the incident occurred may 
+    be explicit in the
+    text or may have to be inferred.  When further information is available 
+    about the location, give the names in order of increasing specificity,
+    separated by a colon, and put the location type in parentheses after 
+    each name.
+    Examples:  COLOMBIA: MEDELLIN (CITY)
+               PERU: LIMA (CITY): MIRAFLORES (NEIGHBORHOOD)
+  Set list:  See separate files called set-list-foreign-nation and
+    set-list-location.
+  Notes:  
+    1) The incident may have occurred in the vicinity of the named place
+    rather than specifically in that place.
+    2) The incident may have occurred between two named places, in which
+    case use a dash to separate them.  
+    Example:  COLOMBIA: CUCUTA (CITY) - CAMPANARIO (REGION)
+    3) If the article says the specific location is unknown, just put the
+    more general location(s).
+    4) Do not provide specific place name information if the message is 
+    unclear as to whether that place is the location of the incident 
+    or the location of the reporting of the incident (or some other location).
+    5) This slot should never be left blank.  Always put at least the
+    country name, even if it must be inferred.  The country where the 
+    article originated is not always a good default.
+
+7.5 SLOT 4--INCIDENT: TYPE
+
+  Applicability: Applicable to all types of incidents
+  Number of fillers:  Always one filler per template
+  Set list:
+    ARSON
+|   BOMBING
+    KIDNAPPING
+    HIJACKING
+    ROBBERY
+    FORCED WORK STOPPAGE
+    ATTACK
+| Notes:  
+|   1) The ATTACK incident type should be used only when a terrorist 
+|   incident clearly does not fall into one of the other categories.
+
+ 7.6 SLOT 5--INCIDENT: STAGE OF EXECUTION
+   
+  Applicability: Applicable to all types of incidents
+  Number of fillers:  Always one filler per template
+  Set list:
+    ACCOMPLISHED
+    ATTEMPTED
+    THREATENED
+  Note:  If a bomb is planted (by possible terrorists) but is detonated
+    intentionally by authorities, an ATTEMPTED BOMBING template should
+    be generated.
+
+ 7.7 SLOT 6--INCIDENT: INSTRUMENT ID
+ 
+  Applicability:  Applicable to all incident types except ARSON
+    and KIDNAPPING
+  Number of fillers:  Null, or one or more fillers
+  Notes:
+    1) Fill this slot only if the text provides a noun phrase that
+    refers to the instrument; do not fill it with expressions that
+|   refer only to the act of using an instrument (such as "shooting"
+|   or "machingegunned")
+    or the effect of using an instrument (such as "explosion").
+    2) If the text provides information on the material (such as
+    "dynamite") used in a bomb or other explosive device, and it
+    provides expressions referring to the container of the material
+    (such as "bomb" or "rocket"), make separate fillers for the
+    material and the container.
+
+7.8 SLOT 7--INCIDENT: INSTRUMENT TYPE
+
+  Applicability:  Applicable to all incident types except ARSON
+    and KIDNAPPING
+  Number of fillers:  Number of fillers: Null, or one or more fillers
+  Cross-referencing:  Include cross-reference to INCIDENT: INSTRUMENT ID
+  Set list (choices are hierarchical):
+       GUN
+         MACHINE GUN
+         MORTAR
+         HANDGUN
+         RIFLE
+       EXPLOSIVE
+         BOMB
+           VEHICLE BOMB
+           DYNAMITE
+           MINE
+           AERIAL BOMB
+         GRENADE
+         MOLOTOV COCKTAIL
+|      PROJECTILE
+|        MISSILE
+|        ROCKET
+       CUTTING DEVICE
+       FIRE
+|      STONE
+       TORTURE
+  Notes:  
+    1) The FIRE option is included because it appeared as the cause of
+|   death in an attack.  It is not clear from the article whether the fire
+    was set as an act of arson or whether it resulted from an explosion.
+    2) Various kinds of rifles, including assault rifles, fit in the
+    category of RIFLE.
+    3) The supercategory of EXPLOSIVE includes a mixture of explosive
+    devices and explosive materials.
+    4) DYNAMITE includes dynamite in any of its various forms, including
+    sticks, gel, etc.
+    5) AERIAL BOMB is for bombs dropped from airplanes.  Note that
+    reportable incidents with AERIAL BOMB as instrument are to be 
+    labeled ATTACK rather than BOMBING.
+    6) Use hyphen (null) if the reported instrument does not fit any
+    of the categories on the set list.
+    7) This slot may be filled even if the INSTRUMENT ID slot is null,
+    as would be the case when the only evidence of a GUN type is
+    found by inference from a verb such as "shoot".
+
+7.9 SLOT 8--PERP: INCIDENT CATEGORY
+
+  Applicability: Applicable to all types of incidents
+  Number of fillers:  One filler per template, or NULL (hyphen) if
+    nature of perpetrator cannot be determined.
+  Set list:
+    TERRORIST ACT
+    STATE-SPONSORED VIOLENCE
+  Notes: 
+    1) TERRORIST ACT should be used when the perpetrator is *not* a
+    member of the government/military/police.
+    2) The subcategory of STATE-SPONSORED VIOLENCE should be used when 
+    the perpetrator is a member of the government/military/police.
+    3) This slot may be filled even if the perpetrators are not identified,
+    if the text gives strong evidence for the category without providing
+    any strings to fill the perpetrator slots; however, it will generally be
+    the case that this slot is null if the perpetrator slots are null.
+
+7.10 SLOT 9--PERP: INDIVIDUAL ID
+
+  Applicability: Applicable to all types of incidents
+  Number of fillers:  Null, or one or more fillers
+
+7.11 SLOT 10--PERP: ORGANIZATION ID
+
+  Applicability: Applicable to all types of incidents
+  Number of fillers:  Null, or one or more fillers
+  Note: Include only if mentioned in the text, i.e., do not use information
+    from the system's general lexicon to fill this in (such as information
+    linking known terrorists to organizations).
+
+7.12 SLOT 11--PERP: ORGANIZATION CONFIDENCE
+
+  Applicability: Applicable to all types of incidents
+  Number of fillers: Null if PERP: ORGANIZATION ID slot is null, 
+    else one filler per filler in the PERP: ORGANIZATION ID slot.
+  Cross-referencing:  Include cross-reference to PERP: ORGANIZATION ID.
+  Set list:
+    REPORTED AS FACT
+    ACQUITTED
+    CLAIMED OR ADMITTED
+    SUSPECTED OR ACCUSED
+      SUSPECTED OR ACCUSED BY AUTHORITIES
+    POSSIBLE
+  Notes:  
+    1) Use REPORTED AS FACT as a default if the identity of the perpetrator 
+    org and its responsibility for the incident appear not to be in question.
+    2) Use SUSPECTED OR ACCUSED if the article explicitly expresses some
+    degree of uncertainty about the identity of the perpetrator org, e.g., by
+    use of qualifying words.
+    This fill should also be used if the article's reporting rests on 
+    suspicions or accusations expressed by some source cited by the
+    article's originator or by the article's originator himself.
+    3) Use SUSPECTED OR ACCUSED BY AUTHORITIES instead of SUSPECTED OR
+    ACCUSED for cases where the article is conveying the information that 
+    the government, military, police, or other authority figure
+    is expressing the suspicion/accusation or is accepting/admitting guilt
+    on behalf of another authority that has been identified as the 
+    perpetrator org.  
+    (In the latter case, where the perpetrator is himself an authority 
+    figure, use CLAIMED OR ADMITTED if he admits/claims his own org's guilt.)
+    4) Use POSSIBLE if an article mentions an organization in the context 
+    of the incident without actually accusing that organization of being
+    responsible for it.
+
+7.13 SLOT 12--PHYS TGT: ID
+
+| Applicability:  Not applicable to KIDNAPPING incidents
+  Number of fillers:  Null, or one or more fillers.  
+  Note:  Use this slot for the entities that are the targets
+    of incidents (facilities, buildings, vehicles, etc.), not for
+    whatever parts happened to have been damaged as a result of the
+    incident (e.g., "windows") unless the text doesn't mention the
+    entity (target) that they are part of.
+
+7.14 SLOT 13--PHYS TGT: TYPE
+
+| Applicability:  Not applicable KIDNAPPING incidents
+  Number of fillers:  Null if ID slot null, or one filler per filler
+    in ID slot.
+  Cross-referencing: Include cross-reference to PHYS TGT: ID
+  Set list:
+    CIVILIAN RESIDENCE
+    COMMERCIAL
+    COMMUNICATIONS
+    DIPLOMAT OFFICE OR RESIDENCE
+    ENERGY
+    FINANCIAL
+    GOVERNMENT OFFICE OR RESIDENCE
+    LAW ENFORCEMENT FACILITY
+    POLITICAL FIGURE OFFICE OR RESIDENCE
+    ORGANIZATION OFFICE
+    TRANSPORT VEHICLE
+    TRANSPORTATION FACILITY
+    TRANSPORTATION ROUTE
+    WATER
+    OTHER
+  Note:  Use OTHER only if the target doesn't fit any of the specific
+    categories.
+
+7.15 SLOT 14--PHYS TGT: NUMBER
+
+| Applicability:  Not applicable to KIDNAPPING incidents
+  Number of fillers:  Null if ID slot null, else one filler per
+    filler in ID slot
+  Cross-referencing: Include cross-reference to PHYS TGT: ID
+  Set list:
+    PLURAL
+  Note:  Use PLURAL if the only information available is that there was
+    more than one physical target.  Otherwise, fill this slot with 
+    a digit generated by the system from the info available in the text.
+    If the text indicates a range of values like "between 6 and 8" or 
+    "at least 6," use a hyphen as an operator, making the fills "6-8" and
+    "6-", respectively.  If the text conveys an approximate number,
+    as in "about 100", use a tilde (~) as a prefix to the number.
+
+ 7.16 SLOT 15--PHYS TGT: FOREIGN NATION
+
+| Applicability: Not applicable to KIDNAPPING incidents
+  Number of fillers:  Null if ID slot null, and null if country of 
+    location of incident is same as nationality of target, else one 
+    filler if nationality is explicitly mentioned in the text.
+  Cross-referencing: Include cross-reference to PHYS TGT: ID unless
+    PHYS TGT: ID is null.
+  Set list:  See separate file called set-list-foreign-nation.
+  Example:  The fill (disregarding cross-reference) should be HONDURAS 
+    if the incident occurred in a country other than Honduras and if 
+    the physical target is the Honduran embassy.
+  Note:  The list, in principle, could be extended to contain all the 
+    countries of the world.  However, it should be the case that it
+    already includes at least all the possibilities covered by the
+    MUC corpus.
+
+7.17 SLOT 16--PHYS TGT: EFFECT OF INCIDENT
+
+| Applicability:  Not applicable to KIDNAPPING incidents
+  Number of fillers:  Null, or one or more fillers.  The EFFECT slot may be
+    filled in even if the ID/NUMBER/TYPE slots are all null (in the case
+|   where the article makes no direction mention of the target but rather
+|   refers to it indirectly by saying
+    something in summary about damage).  Conversely, the EFFECT slot may
+    be null even if the ID/NUMBER/TYPE slots are filled.
+  Cross-referencing: Include cross-reference to PHYS TGT: ID;
+    if that slot is null, generate a dummy cross-reference, e.g.,
+    NO DAMAGE: "-".
+  Set list:
+    DESTROYED
+    SOME DAMAGE
+    NO DAMAGE
+  Additional set list items for ROBBERY incidents:
+    MONEY TAKEN FROM TARGET
+    PROPERTY TAKEN FROM TARGET
+    TARGET TAKEN
+  Notes: 
+    1) Use DESTROYED when the article indicates total destruction, as
+    when it says that the target was "blown up" by a bomb.
+    2) ARSON of a target implies at least SOME DAMAGE.  Other incident
+    types, such as BOMBING, do not imply damage.
+
+7.18 SLOT 17--PHYS TGT: TOTAL NUMBER
+
+| Applicability:  Not applicable to KIDNAPPING incidents.
+  Number of fillers:  One filler per template if a total number is 
+    explicit in the text and is not redundant (see notes); else NULL
+  Notes:  
+    1) This slot is to be filled only in those cases where there is
+    more than one PHYS TGT: ID (in order to prevent the filler for
+    this slot from being redundant with the information contained
+    in PHYS TGT: NUMBER) and only if an actual total number value is
+    given in the text.
+    2) To fill this slot, use a digit generated by the system from 
+    the info available in the text.  If the text gives a range of 
+    values like "between 6 and 8" or "at least 6," use a hyphen as an 
+    operator, making the fills "6-8" and "6-", respectively.
+    If the text conveys an approximate number, as in "about 10
+    pylons and power lines", use a tilde (~) as a prefix to the number.
+
+ 7.19 SLOT 18--HUM TGT: NAME
+ 
+  Applicability:  Applicable to all types of incidents
+  Number of fillers:  Null, or one or more fillers
+  Notes:
+|   1) The fillers for this slot should always be proper names.
+
+7.20 SLOT 19--HUM TGT: DESCRIPTION
+
+  Applicability:  Applicable to all types of incidents.
+  Number of fillers:  Null, or one or more fillers
+  Cross-referencing: Include cross-reference to HUM TGT: NAME unless
+    HUM TGT: NAME is null.
+  Notes:  
+|   1) If the filler for this slot refers to a named person in the HUM TGT:
+    NAME slot, this slot should be filled with a "title" (e.g., "Monsignor",
+    "Mr.") or "role" (e.g., "engineer", "priest").  It should be null
+|   if no title or role is given in the text (e.g., if only a general
+    descriptor such as "woman" or "peasant" is present in the text).
+
+7.21 SLOT 20--HUM TGT: TYPE
+
+  Applicability:  Applicable to all types of incidents.
+  Number of fillers: Null if both NAME and DESCRIPTION slots are null;
+    else one filler per filler in NAME or DESCRIPTION slot (see
+    cross-referencing instructions).
+  Cross-referencing: Include cross-reference to NAME slot if NAME slot
+    is not NULL; else include cross-reference to DESCRIPTION slot.
+  Set list:
+    CIVILIAN
+    DIPLOMAT
+    GOVERNMENT OFFICIAL
+    FORMER GOVERNMENT OFFICIAL
+    FORMER ACTIVE MILITARY
+    LEGAL OR JUDICIAL
+    ACTIVE MILITARY
+    POLITICAL FIGURE
+    LAW ENFORCEMENT
+    SECURITY GUARD
+  Notes:  
+    1) Use CIVILIAN as the default category.
+    2) The categories ACTIVE MILITARY and LAW ENFORCEMENT would be used 
+    when military and/or police personnel are targets in an incident that
+    had nonmilitary targets as well.
+    3) Use GOVERNMENT OFFICIAL in preference to POLITICAL FIGURE in cases
+    where both apply.
+    4) Use LAW ENFORCEMENT for all kinds of police forces and paramilitary
+    forces that are working on the side of the government.
+    5) Use SECURITY GUARD for personal/facility security personnel who
+    are not described as being members of a military or police force.
+
+7.22 SLOT 21--HUM TGT: NUMBER
+
+  Applicability:  Applicable to all types of incidents.
+  Number of fillers:  Null if both NAME and DESCRIPTION slots are null;
+    else one filler per filler in NAME or DESCRIPTION slot (see
+    cross-referencing instructions).
+  Cross-referencing: Include cross-reference to NAME slot if NAME slot
+    is not NULL; else include cross-reference to DESCRIPTION slot.
+  Set list:
+    PLURAL
+  Note:  Use PLURAL if the only information available is that there was
+    more than one human target.  Otherwise, fill this slot with 
+    a digit generated by the system from the info available in the text.
+    If the text indicates a range of values like "between 6 and 8" or 
+    "at least 6," use a hyphen as an operator, making the fills "6-8" and
+    "6-", respectively.
+    If the text conveys an approximate number, as in "about 10
+    students and teachers", use a tilde (~) as a prefix to the number.
+
+7.23 SLOT 22--HUM TGT: FOREIGN NATION
+
+  Applicability: Applicable to all types of incidents
+  Number of fillers:  Null if both NAME and DESCRIPTION slots null, 
+    and null if country of location of incident is same as nationality 
+    of target, else one filler per NAME/DESCRIPTION (see cross-referencing
+    instructions) if nationality is explicitly mentioned in the text.
+  Cross-referencing: Include cross-reference to NAME slot if NAME slot
+    is not NULL; else include cross-reference to DESCRIPTION slot.
+  Set list:  See separate file called set-list-foreign-nation.
+  Example:  The fill (disregarding cross-reference) should be HONDURAS 
+    if the incident occurred in a country other than Honduras and if 
+    the human target is Honduran embassy employees.
+  Note: The list, in principle, could be extended to contain all the 
+    countries of the world.  However, it should be the case that it
+    already includes at least all the possibilities covered by the
+    MUC corpus.
+
+7.24 SLOT 23--HUM TGT: EFFECT OF INCIDENT
+
+| Applicability:  Applicable to all types of incidents.
+  Number of fillers:  Null, or one or more fillers.  The EFFECT slot may be
+    filled in even if the NAME/DESCRIPTION/NUMBER/TYPE slots are all null 
+    (in the case where the article makes no mention at all of any human 
+    targets or unwitting victims but says something in summary about (lack
+    of) victims).  Conversely, the EFFECT slot may be null even if the 
+    ID/NUMBER/TYPE slots are filled.
+  Cross-referencing: Include cross-reference to NAME slot if NAME slot
+    is not NULL; else include cross-reference to DESCRIPTION slot.
+    If both slots are null, generate a dummy cross-reference, e.g.,
+    NO INJURY: "-".
+| Set list for all incidents except KIDNAPPING, ATTEMPTED ATTACK,
+|   and THREATENED ATTACK incidents:
+      INJURY
+      DEATH
+      NO INJURY
+      NO DEATH
+      NO INJURY OR DEATH
+  Set list for KIDNAPPING incidents, in addition to above list:
+      REGAINED FREEDOM
+| Set list for ATTEMPTED ATTACK:
+      ESCAPED
+      INJURY
+      NO INJURY
+| Set list for THREATENED ATTACK incidents:
+      INJURY
+      NO INJURY
+      RESIGNATION (i.e., from job)
+      NO RESIGNATION
+
+7.25 SLOT 24--HUM TGT: TOTAL NUMBER
+
+  Applicability:  Applicable to all types of incidents.
+  Number of fillers:  One filler per template if a total number is 
+    explicit in the text and is not redundant (see notes); else null
+  Notes:  
+    1) This slot is to be filled only in those cases where there is
+    more than one human target, i.e., when the number of fillers
+    for NAME and DESCRIPTION sum up to at least two (in order to 
+    prevent the filler for this slot from being redundant with the 
+    information contained in HUM TGT: NUMBER) and only if an actual 
+    total number value is given in the text.
+    2) To fill this slot, use a digit generated by the system from 
+    the info available in the text.  If the text gives a range of 
+    values like "between 6 and 8" or "at least 6," use a hyphen as an 
+    operator, making the fills "6-8" and "6-", respectively.
+    If the text conveys an approximate number, as in "about 10
+    students and teachers", use a tilde (~) as a prefix to the number.

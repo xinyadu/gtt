@@ -1,0 +1,5 @@
+There are two tar files in this directory.  The first one
+(templ-doc-basic.tar) contains files that have been kept up to date
+through MUC-4; the other (templ-doc-more.tar) contains less
+well-maintained files of extra information on place names that occur
+in the texts.

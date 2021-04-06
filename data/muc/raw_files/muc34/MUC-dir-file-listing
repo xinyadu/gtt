@@ -1,0 +1,56 @@
+-rw-r--r--  1 sundheim        0 Oct 16 17:11 MUC-dir-file-listing
+
+TASK:
+total 2
+drwxr-xr-x  2 sundheim      512 Oct 14 17:15 CORPORA
+drwxr-xr-x  2 sundheim      512 Oct 14 15:49 TASKDOC
+
+TASK/CORPORA:
+total 1985
+-rw-r--r--  1 sundheim      684 Oct 14 17:15 README-CORPORA
+-rw-r--r--  1 sundheim  1380551 Oct 14 15:33 dev.tar.Z
+-rw-r--r--  1 sundheim   127607 Oct 14 16:27 tst1.tar.Z
+-rw-r--r--  1 sundheim   133229 Oct 14 16:57 tst2.tar.Z
+-rw-r--r--  1 sundheim   146032 Oct 14 17:04 tst3.tar.Z
+-rw-r--r--  1 sundheim   186425 Oct 14 17:15 tst4.tar.Z
+
+TASK/TASKDOC:
+total 84
+-rw-r--r--  1 sundheim      269 Oct 14 15:49 README-TASKDOC
+-rw-r--r--  1 sundheim    44403 Oct 14 15:49 templ-doc-basic.tar.Z
+-rw-r--r--  1 sundheim    39617 Oct 14 15:49 templ-doc-more.tar.Z
+
+TEST:
+total 2
+drwxr-xr-x  4 sundheim      512 Oct 16 16:20 RESULTS
+drwxr-xr-x  2 sundheim      512 Oct 16 12:57 SCORER
+
+TEST/RESULTS:
+total 4
+-rw-r--r--  1 sundheim     1101 Oct 16 16:20 README-RESULTS
+drwxr-xr-x  2 sundheim      512 Oct 16 16:04 TST3
+drwxr-xr-x  2 sundheim      512 Oct 16 15:51 TST4
+
+TEST/RESULTS/TST3:
+total 992
+-rw-r--r--  1 sundheim     1798 Oct 16 15:50 config-tst3.el
+-rw-r--r--  1 sundheim    42238 Oct 16 15:54 final-history-nrad.tst3.Z
+-rw-r--r--  1 sundheim   379739 Oct 16 15:38 response-templates.tst3.tar.Z
+-rw-r--r--  1 sundheim   551991 Oct 16 16:05 scores-pass1.tst3.nrad.tar.Z
+-rw-r--r--  1 sundheim    11872 Oct 16 15:50 slotconfig-tst3.el
+
+TEST/RESULTS/TST4:
+total 896
+-rw-r--r--  1 sundheim     1799 Oct 16 15:51 config-tst4.el
+-rw-r--r--  1 sundheim    34134 Jul  7 14:29 final-cumulative-hist.tst4.Z
+-rw-r--r--  1 sundheim   352367 Jul  7 14:29 response-templates.tst4.tar.Z
+-rw-r--r--  1 sundheim   491395 Jul  7 14:30 scores-pass1.tst4.nrad.tar.Z
+-rw-r--r--  1 sundheim    11872 Oct 16 15:51 slotconfig-tst4.el
+
+TEST/SCORER:
+total 665
+-rw-r--r--  1 sundheim     4666 Oct 14 16:02 instructions.v3.3
+-rw-r--r--  1 sundheim    16401 Oct 14 16:02 report.el
+-rw-r--r--  1 sundheim   363337 Oct 14 16:02 score-full.tar.Z
+-rw-r--r--  1 sundheim   245051 Oct 14 16:02 score.tar.Z
+-rw-r--r--  1 sundheim    27423 Oct 14 16:02 scoring-guidelines.v7

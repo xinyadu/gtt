@@ -1,0 +1,140 @@
+------------------------------------------------------------------------
+- Instructions file for MUC-4 Scorer
+- MUC VERSION 3.2
+------------------------------------------------------------------------
+
+
+
+To unpack and install the MUC Scoring System:
+
+  1) Make a top-level directory to hold the scoring files. I'll use the 
+     meta-variable $SCORE to indicate the name of this directory in the
+     rest of these instructions.
+
+         % mkdir $SCORE
+
+  2) If you have obtained the distribution via FTP, skip to step 3.
+     If you have received the distribution via e-mail, you need to
+     decode the uuencoded binary file.
+
+     Remove the header and everything else up to the "cut here" line in
+     the message, and save the remainder in a file in the $SCORE directory
+     called "score.TAR.uue".  Go to that directory and uudecode it, producing
+     a file called "score.TAR.Z".
+   
+         % cd $SCORE
+         % uudecode score.TAR.uue
+
+     If you get error messages from uudecode about permissions, you may
+     need to copy the uue file to /tmp, decode it there, and copy the
+     resulting .Z file back to $SCORE.
+
+  3) Most sites receive the full distribution in a file named "score-full.TAR.Z".
+     If you have received the smaller version "score.TAR.Z", substitute
+     that file for the "score-full" file in the following instructions.
+     The file "score-full.TAR.Z" needs to be uncompressed produce 
+     "score-full.TAR". 
+
+         % uncompress score-full.TAR.Z
+
+     The directories and files need to be extracted with the tar command.
+
+         % tar xvf score-full.TAR
+
+  4) The file "load.el" contains a variable "*muc-base-directory*" that
+     must be changed to point to the $SCORE directory.   Full path names
+     must be used.  Since all files are delivered as read-only, change the
+     permissions on the file first.
+
+	 % chmod +w lisp/load.el
+
+     Edit "$SCORE/lisp/load.el", and change the variable to point 
+     to $SCORE.  This tells the system how to find Lisp files, 
+     data files, and the online version of the manual.
+
+     You may want to change the permissions on this file back to -w 
+     (read-only) after this is done, for security.
+
+  5) Change directories to the "doc" subdirectory
+
+        % cd doc
+     
+     and type
+
+        % make all
+
+     to build the hardcopy and online versions of the manual.  The README
+     file in that directory describes this process in more detail.
+
+
+About the files:
+
+  The files in $SCORE and lower-level directories constitute the MUC Message
+  Scoring system.  They are used as follows:
+
+   lisp              - Emacs Lisp files, and their byte-compiled versions
+   doc               - The hardcopy and online source for the user's manual
+   test              - a small test suite to experiment with and test your
+                       installation.
+   run-scorer.el     - Emacs lisp configuration file for batch mode scoring.
+   instructions.v3.0 - this file
+  
+
+To load the system and run it on a small set of test cases, do the
+following:
+
+  1) Run GNU Emacs, by typing
+
+        % emacs -l $SCORE/lisp/load.el
+
+     from the command line.
+
+  2) Load the test cases by typing
+
+        M-x initialize-muc-scorer $SCORE/test/config.el
+
+     Once you have loaded the test cases, typing 'M-?' in one of the Browser
+     display windows will display the online version of the manual, explaining
+     how to browse, score, and modify the templates.
+
+
+To run the Scorer in batch mode:
+
+  1) Edit "$SCORE/run-scorer.el", and change all of the directory path names to
+     point to $SCORE/lisp or $SCORE/test. This tells the system where
+     to find the load file and configuration file, and where to save the score
+     report.  Full path names must be used.
+
+     The file is delivered read-only so the permissions will to be changed with
+
+	 % chmod +w run-scorer.el
+ 
+     and changed back with
+
+	 % chmod -w run-scorer.el
+ 
+  2) Start the scorer with the command:
+
+        % emacs -batch -l $SCORE/run-scorer.el
+
+     This will allow you to run without having to interact with the scoring
+     program.  The results will be in the file "test-score".
+
+There are two alternatives to using run-scorer.el, which produces only the
+summary totals.  If you want template scores as well, use
+run-template-scorer.el, and if you want message level scores use
+run-message-scorer.el.
+
+
+If you have any problems installing this system, suggestions, complaints,
+etc., send mail to the authors of version 3.0 at
+
+     chinchor@esosun.css.gov
+and CC to
+     yonkman@esosun.css.gov
+
+
+------snip-------snip--------cut-here--------snip---------snip------------
+
+
+(emailed version goes here)
