@@ -4,6 +4,7 @@ import logging
 import os
 import json
 from collections import OrderedDict
+from eval import eval_tf
 
 import numpy as np
 import torch
@@ -424,13 +425,14 @@ class NERTransformer(BaseTransformer):
                     preds_log[docid]["pred_templates"] = preds[docid]
                     preds_log[docid]["gold_templates"] = golds[docid]
 
-        # # evaluate
-        # results = eval_ceaf(preds, golds)
-        # logger.info("================= CEAF score =================")
-        # logger.info("phi_strict: P: {:.2f}%,  R: {:.2f}%, F1: {:.2f}%".format(results["strict"]["micro_avg"]["p"] * 100, results["strict"]["micro_avg"]["r"] * 100, results["strict"]["micro_avg"]["f1"] * 100))
-        # logger.info("phi_prop: P: {:.2f}%,  R: {:.2f}%, F1: {:.2f}%".format(results["prop"]["micro_avg"]["p"] * 100, results["prop"]["micro_avg"]["r"] * 100, results["prop"]["micro_avg"]["f1"] * 100))
-        # logger.info("==============================================")
-        # logs["test_micro_avg_f1_phi_strict"] = results["strict"]["micro_avg"]["f1"]
+        # evaluate
+        results = eval_tf(preds, golds)
+        for key in results:
+            if key == "micro_avg":
+                print("***************** {} *****************".format(key))
+            else:
+                print("================= {} =================".format(key))
+            print("P: {:.2f}%,  R: {:.2f}%, F1: {:.2f}%".format(results[key]["p"] * 100, results[key]["r"] * 100, results[key]["f1"] * 100)) # phi_strict
 
         logger.info("writing preds to .out file:")
         if args.debug:
