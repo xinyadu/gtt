@@ -188,9 +188,6 @@ def eval_tf(preds, golds, docids=[]):
                 ex_best = ex_result
                 map_best = mapping
 
-        # if docid == "30018":
-        #     for key in ex_best: print(key, ex_best[key])
-        #     import ipdb; ipdb.set_trace()
 
         # sum for one docid
         for role in all_keys:
@@ -261,25 +258,14 @@ if __name__ == "__main__":
         for num in [1,2,3,4]:
             docids = docids_event_n[str(num)]
             results = eval_tf(preds, golds, docids)
-            
             for key in all_keys:
-                # if key == "micro_avg":
-                #     print("***************** {} *****************".format(key))
-                # else:
-                #     print("================= {} =================".format(key))
-                    
                 str_print += [results[key]["f1"] * 100]
-                # print("P: {:.2f}%,  R: {:.2f}%, F1: {:.2f}%".format(results[key]["p"] * 100, results[key]["r"] * 100, results[key]["f1"] * 100)) # phi_strict
-                # print("phi_prop: P: {:.2f}%,  R: {:.2f}%, F1: {:.2f}%".format(results["prop"][key]["p"] * 100, results["prop"][key]["r"] * 100, results["prop"][key]["f1"] * 100))
-                # print()
         str_print= ["{:.2f}".format(r) for r in str_print]
         print("print: {}".format(" ".join(str_print)))
-            # print()
             
     elif args.event_n == ">=2":
         all_keys = ["micro_avg"]
         docids = docids_event_n[args.event_n]
-        # import ipdb; ipdb.set_trace()
         results = eval_tf(preds, golds, docids)
         str_print = []
         for key in all_keys:
@@ -290,8 +276,6 @@ if __name__ == "__main__":
                 
             str_print += [results[key]["p"] * 100, results[key]["r"] * 100, results[key]["f1"] * 100]
             print("P: {:.2f}%,  R: {:.2f}%, F1: {:.2f}%".format(results[key]["p"] * 100, results[key]["r"] * 100, results[key]["f1"] * 100)) # phi_strict
-            # print("phi_prop: P: {:.2f}%,  R: {:.2f}%, F1: {:.2f}%".format(results["prop"][key]["p"] * 100, results["prop"][key]["r"] * 100, results["prop"][key]["f1"] * 100))
-            # print()
         str_print= ["{:.2f}".format(r) for r in str_print]
         print("print: {}".format(" ".join(str_print)))
         print()
@@ -301,7 +285,6 @@ if __name__ == "__main__":
         docids = []
         results = eval_tf(preds, golds, docids)
         str_print = []
-        # import ipdb; ipdb.set_trace()
         for key in all_keys:
             if key == "micro_avg":
                 print("***************** {} *****************".format(key))
@@ -310,28 +293,10 @@ if __name__ == "__main__":
                 
             str_print += [results[key]["p"] * 100, results[key]["r"] * 100, results[key]["f1"] * 100]
             print("P: {:.2f}%,  R: {:.2f}%, F1: {:.2f}%".format(results[key]["p"] * 100, results[key]["r"] * 100, results[key]["f1"] * 100)) # phi_strict
-            # print("phi_prop: P: {:.2f}%,  R: {:.2f}%, F1: {:.2f}%".format(results["prop"][key]["p"] * 100, results["prop"][key]["r"] * 100, results["prop"][key]["f1"] * 100))
-            # print()
         str_print= ["{:.2f}".format(r) for r in str_print]
         print("print: {}".format(" ".join(str_print)))
         print()
 
-
-    # results = eval_tf(preds, golds, docids)
-    # # all_keys = list(role for _, role in tag2role.items()) + ["micro_avg"]
-    # str_print = []
-    # for key in all_keys:
-    #     if key == "micro_avg":
-    #         print("***************** {} *****************".format(key))
-    #     else:
-    #         print("================= {} =================".format(key))
-            
-    #     str_print += [results[key]["p"] * 100, results[key]["r"] * 100, results[key]["f1"] * 100]
-    #     print("P: {:.2f}%,  R: {:.2f}%, F1: {:.2f}%".format(results[key]["p"] * 100, results[key]["r"] * 100, results[key]["f1"] * 100)) # phi_strict
-    #     # print("phi_prop: P: {:.2f}%,  R: {:.2f}%, F1: {:.2f}%".format(results["prop"][key]["p"] * 100, results["prop"][key]["r"] * 100, results["prop"][key]["f1"] * 100))
-    #     print()
-    # str_print= ["{:.2f}".format(r) for r in str_print]
-    # print("print: {}".format(" ".join(str_print)))
         
 
 
