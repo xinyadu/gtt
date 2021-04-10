@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ## generative template-filling transformers (GTT)
+=======
+## GTT
+>>>>>>> 7b0d622272ebf0216588befc755ff77fb08824f2
 
 ### Train and Test
 Run `bash run_pl.sh`. 
