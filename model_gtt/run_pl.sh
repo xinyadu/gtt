@@ -36,8 +36,8 @@ python3 run_pl_gtt.py  \
 --train_batch_size $BATCH_SIZE \
 --eval_batch_size $BATCH_SIZE \
 --seed $SEED \
---n_gpu 1 \
+--n_gpu 0 \
 --thresh $th \
---do_predict \
-# --do_train 
+--do_train \
+# --do_predict \
 done
