@@ -20,3 +20,14 @@ Template Filling with Generative Transformers
 
 * The encoder-decoder model (code is written based on hugging face [transformers/examples/ner/3ee431d](https://github.com/huggingface/transformers/tree/3ee431dd4c720e67e35a449b453d3dc2b15ccfff)
 * How to run: see README in model_gtt
+
+## Citation
+If you use our materials, please cite
+```
+@inproceedings{du2021gtt,
+  title={Template Filling with Generative Transformers},
+  author={Du, Xinya and Rush, Alexander M and Cardie, Claire},
+  booktitle = "Proceedings of the 2021 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies",
+  year={2021}
+}
+```
